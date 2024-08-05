@@ -10,6 +10,9 @@ public class XpathUsingIndex {
         driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
         driver.manage().window().maximize();
 
+        driver.close();
+        driver.quit();
+
     }
 
 }
