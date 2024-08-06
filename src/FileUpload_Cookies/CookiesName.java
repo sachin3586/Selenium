@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class CookiesName {
     public static void main(String[] args) throws InterruptedException {
-
+ // This is CookiesName class
         System.setProperty("webdriver.chrome.driver","C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
