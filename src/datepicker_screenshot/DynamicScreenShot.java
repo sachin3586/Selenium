@@ -23,6 +23,7 @@ public class DynamicScreenShot {
         //WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20)) ; explicit wait
         driver.navigate().to("https://www.tatapower.com/");
 
+        // Normal screenshot and dynamic screenshot code is same only add on String timestamp method
         File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         String timestamp=new SimpleDateFormat("yyyy-MM-dd_HHmmss").format(new Date());
         File dest=new File("C:/Users/lenovo/Desktop/Testing/ScreenShot " + timestamp+ ".png");
