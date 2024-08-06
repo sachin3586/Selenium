@@ -13,7 +13,7 @@ public class DatePicker {
 
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.switchTo().frame(0);
-        driver.findElement(By.id("datepicker_screenshot")).click();
+        driver.findElement(By.id("datepicker")).click();
         //26/05/2021
         while (true){
             String month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
