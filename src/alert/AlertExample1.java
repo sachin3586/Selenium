@@ -1,37 +1,31 @@
-package dropdown;
+package alert;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 
-import java.util.List;
+import java.time.Duration;
 
-public class Example2 {
+public class AlertExample1 {
+
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.letskodeit.com/practice");
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
-        WebElement element = driver.findElement(By.id("carselect"));
-
-        Select select=new Select(element);
-
-
+        WebElement element = driver.findElement(By.xpath("//input[@name='enter-name']"));
+        element.sendKeys("SACHIN DADHE");
+        driver.findElement(By.id("confirmbtn")).click();
 
 
-        select.selectByIndex(1);
-        Thread.sleep(2000);
+       System.out.println(driver.switchTo().alert().getText());
+        driver.switchTo().alert().dismiss();
 
-        // select using visible text
+        Thread.sleep(3000);
 
-        select.selectByVisibleText("Honda");
-        Thread.sleep(2000);
-
-        select.selectByValue("bmw");
-        Thread.sleep(2000);
         driver.close();
     }
 }

@@ -2,6 +2,7 @@ package autosuggestion;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
@@ -19,7 +20,9 @@ public class FlipkartAutosuggestion_Index {
 
         Thread.sleep(3000);
 
-        driver.findElement(By.xpath("(//li[@class='_3D0G9a'])[4]")).click();
+        WebElement ele = driver.findElement(By.xpath("(//li[@class='_3D0G9a'])[4]"));
+        ele.click();
+      //  System.out.println(ele.getText());
 
         Thread.sleep(3000);
 

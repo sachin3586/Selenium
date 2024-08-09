@@ -22,7 +22,7 @@ public class DynamicScreenShot {
 
         //WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20)) ;
         driver.navigate().to("https://www.tatapower.com/");
-        
+
         File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         String timestamp=new SimpleDateFormat("yyyy-MM-dd_HHmmss").format(new Date());
         File dest=new File("C:/Users/lenovo/Desktop/Testing/ScreenShot " + timestamp+ ".png");
