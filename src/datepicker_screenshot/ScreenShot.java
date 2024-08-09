@@ -29,8 +29,10 @@ public class ScreenShot {
        // wait.until(ExpectedConditions.visibilityOfElementLocated(element))
 
         File screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        File destination=new File("C:\\Users\\lenovo\\Desktop\\Testing\\image.png");
+        File destination=new File("C:\\Users\\lenovo\\Desktop\\Testing\\sunpharma.png");
         FileHandler.copy(screenShot,destination);
+
+        System.out.println("Title is " + driver.getTitle());
 
 
         driver.close();

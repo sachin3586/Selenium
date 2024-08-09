@@ -36,17 +36,6 @@ public class GetWindowHandles {
         Thread.sleep(3000);
         driver.switchTo().window(parentWindowId);
         System.out.println(driver.getTitle());
-        driver.close();
-
-
-
-
-
-
-
-
-
-
 
         Thread.sleep(3000);
         driver.quit();
