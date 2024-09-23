@@ -18,7 +18,7 @@ public class BasicOfWebDriver {
         ChromeDriver driver1=new ChromeDriver();  // Child class object
         driver.get("https://gemini.google.com");
 
-        String title=driver.getTitle();clear
+        String title=driver.getTitle();
                 
         System.out.println("Title is " + title);
 
