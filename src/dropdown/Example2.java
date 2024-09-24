@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
 import java.util.List;
 
 public class Example2 {
@@ -14,6 +15,7 @@ public class Example2 {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.letskodeit.com/practice");
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         WebElement element = driver.findElement(By.id("carselect"));
 

@@ -10,7 +10,7 @@ import java.util.concurrent.ForkJoinPool;
 
 public class FindElements {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\chromedriver-new\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
         driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
         driver.manage().window().maximize();

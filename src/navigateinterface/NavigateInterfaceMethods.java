@@ -17,6 +17,7 @@ public class NavigateInterfaceMethods {
 
         driver.get("https://www.google.com/");
         driver.navigate().refresh();
+
         Thread.sleep(2000);
         driver.navigate().to("https://www.facebook.com/");
 

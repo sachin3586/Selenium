@@ -20,7 +20,6 @@ public class ScrollUsingElement {
         JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
         javascriptExecutor.executeScript("arguments[0].scrollIntoView();", scrollElement);
 
-
         Thread.sleep(3000);
         driver.close();
     }

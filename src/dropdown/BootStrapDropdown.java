@@ -20,18 +20,7 @@ public class BootStrapDropdown {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.get("https://qaautomation.expert/2019/12/16/how-to-automate-bootstrap-dropdown-using-selenium-webdriver");
 
-      /*  String alertText = driver.switchTo().alert().getText();
-        System.out.println(alertText);
-        driver.switchTo().alert().accept();
-        driver.manage().deleteAllCookies();
 
-       */
-
-       /* WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(25)); // explicit wait
-
-        wait.until(ExpectedConditions.visibilityOf(element));
-
-        */
         WebElement ele = driver.findElement(By.className("dropdown-link"));
         Actions actions=new Actions(driver);
         actions.moveToElement(ele).build().perform();

@@ -11,7 +11,7 @@ import java.time.Duration;
 public class ScrollUsingElement2 {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver-new\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.gailonline.com/");
 

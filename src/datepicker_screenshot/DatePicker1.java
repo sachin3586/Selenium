@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DatePicker1 {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\chromedriver-new\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://jqueryui.com/datepicker/");
         driver.manage().window().maximize();
@@ -20,7 +20,7 @@ public class DatePicker1 {
             String month = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
             String year = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
 
-            if (year.equals("2017") && month.equals("May"))
+            if (year.equals("2001") && month.equals("May"))
             {
                 driver.findElement(By.xpath("//a[@data-date='26']")).click();
                 break;

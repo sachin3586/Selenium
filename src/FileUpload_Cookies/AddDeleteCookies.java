@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class AddDeleteCookies {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -15,6 +15,7 @@ public class AddDeleteCookies {
         driver.get("https://www.zomato.com");
 
         Cookie cookie = new Cookie("My Stock", "Sun Pharma");
+
         driver.manage().addCookie(cookie);
 
         //  driver.manage().deleteAllCookies();
