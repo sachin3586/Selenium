@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BasicOfWebDriver {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\lenovo\\Desktop\\Testing\\Driver\\ChromeDriver\\chromedriver.exe");
-        WebDriver driver=new ChromeDriver();   // upcasting of chromedriver class
+        WebDriver driver=new ChromeDriver();   
         
         /* Instead of Setting property and path we can directly use webdriver manager dependency
           Setup ChromeDriver using WebDriverManager
@@ -15,7 +15,7 @@ public class BasicOfWebDriver {
         driver.manage().window().maximize();
         */
 
-        ChromeDriver driver1=new ChromeDriver();  // Child class object
+        ChromeDriver driver1=new ChromeDriver(); 
         driver.get("https://gemini.google.com");
 
         String title=driver.getTitle();
@@ -26,6 +26,7 @@ public class BasicOfWebDriver {
         System.out.println("Url of this page is " + url);
         Thread.sleep(2000);
         driver.close();
+        driver.qiut();
 
     }
 }
